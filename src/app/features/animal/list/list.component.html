@@ -1,0 +1,21 @@
+
+<article class="button">
+  <button mat-fab color="warn" aria-label=" icon button with a home icon" (click)="goToForm()">Formulario</button>
+  </article>
+
+<div *ngFor="let animal of animals">
+  <p>{{ animal.id }}</p>
+  <p> {{ animal.identification }}</p>
+  <p>{{ animal.specie }}</p>
+
+  <article>
+    <button mat-raised-button color="warn" (click)="goDelete(animal.id)">Delete</button>
+    <button mat-raised-button color="primary" (click)="editAnimal(animal.id)">Edit</button>
+  </article>
+
+</div>
+
+<article class="button">
+  <button mat-fab color="warn" aria-label=" icon button with a home icon" (click)="goToHome()">Home</button>
+  </article>
+

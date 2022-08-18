@@ -1,0 +1,30 @@
+
+<div class="container">
+  <form [formGroup]="formForm">
+  <section class="formulario">
+      <h1 id="Formulario">Formulario</h1>
+
+      <label for="">name</label>
+  <input type="text" formControlName="name">
+
+  <label for="">imageUrl</label>
+  <input type="text" formControlName="imageUrl">
+
+  <label for="">department</label>
+  <input type="text" formControlName="department">
+
+  <label for="">price</label>
+  <input type="number" formControlName="price">
+
+  <label for="">comment</label>
+  <input type="text" formControlName="comment">
+
+  <article>
+    <button mat-flat-button color="primary" (click)="goToHome()">Home</button>
+    <button mat-flat-button color="primary" (click)="inSubmit()">Insert</button>
+  </article>
+
+
+  </section>
+</form>
+  </div>

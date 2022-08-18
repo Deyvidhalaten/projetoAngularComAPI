@@ -1,0 +1,26 @@
+
+.container{
+  background-color: #e5e8e5;
+  color: #4e545c;
+}
+
+article{
+  display:flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+button{
+  border-radius: 60px;
+  font-size:1.2rem;
+  width: 100px;
+  border:none;
+  margin-top: 2rem;
+  outline-style:none;
+}
+
+button:hover{
+  background-color: dimgray;
+}
+

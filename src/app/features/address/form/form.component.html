@@ -1,0 +1,40 @@
+<div class="container">
+  <form [formGroup]="formForm">
+    <section class="formulario">
+      <h1 id="Formulario">Formulario</h1>
+
+
+      <label for="">city</label>
+      <input type="text" formControlName="city" />
+
+      <label for="">county</label>
+      <input type="text" formControlName="county" />
+
+      <label for="">state</label>
+      <input type="text" formControlName="state" />
+
+      <label for="">zipCode</label>
+      <input type="number" formControlName="zipCode" />
+
+      <article>
+        <button
+          mat-fab
+          color="warn"
+          aria-label=" icon button with a home icon"
+          (click)="goToHome()"
+        >
+          Home
+        </button>
+        <button
+          mat-fab
+          color="warn"
+          aria-label=" icon button with a home icon"
+          (click)="inSubmit()"
+        >
+          Insert
+        </button>
+      </article>
+    </section>
+  </form>
+</div>
+

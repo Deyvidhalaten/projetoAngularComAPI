@@ -1,0 +1,21 @@
+<div class="container">
+  <form [formGroup]="formForm">
+  <section class="formulario">
+      <h1 id="Formulario">Formulario</h1>
+
+      <label for="">Identification</label>
+  <input type="text" formControlName="identification">
+
+  <label for="">Specie</label>
+  <input type="text" formControlName="specie">
+
+  <article>
+    <button mat-flat-button color="primary" (click)="goToHome()">Home</button>
+    <button mat-flat-button color="primary" (click)="inSubmit()">Insert</button>
+  </article>
+
+
+  </section>
+</form>
+  </div>
+

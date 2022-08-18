@@ -1,0 +1,34 @@
+div{
+  display:flex;
+  flex-direction: column;
+  height: 40vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-color: green;
+  width: 600px;
+  margin: 25px 200px 25px 650px;
+}
+
+*{
+  background-color: #e5e8e5;
+  color: #4e545c;
+}
+
+button{
+  border-radius: 40px;
+  font-size:1.2rem;
+  width: 100px;
+  border:none;
+  margin-top: 2rem;
+  outline-style:none;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button:hover{
+  background-color: #000401;
+}

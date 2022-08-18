@@ -1,0 +1,46 @@
+<div class="container">
+  <form [formGroup]="formForm">
+    <section class="formulario">
+      <h1 id="Formulario">Formulario</h1>
+
+      <label for="">Name</label>
+      <input type="text" formControlName="name" />
+
+      <label for="">Age</label>
+      <input type="number" formControlName="age" />
+
+      <label for="">email</label>
+      <input type="text" formControlName="email" />
+
+      <label for="">Phone</label>
+      <input type="text" formControlName="phone" />
+
+      <article>
+        <button
+          mat-fab
+          color="warn"
+          aria-label=" icon button with a home icon"
+          (click)="goToHome()"
+        >
+          Home
+        </button>
+        <button
+          mat-fab
+          color="warn"
+          aria-label=" icon button with a home icon"
+          (click)="goToList()"
+        >
+          List
+        </button>
+        <button
+          mat-fab
+          color="warn"
+          aria-label=" icon button with a home icon"
+          (click)="inSubmit()"
+        >
+          Insert
+        </button>
+      </article>
+    </section>
+  </form>
+</div>

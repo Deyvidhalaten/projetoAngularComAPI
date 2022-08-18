@@ -1,0 +1,21 @@
+<article class="button">
+<button mat-fab color="warn" aria-label=" icon button with a home icon" (click)="goToForm()">Formulario</button>
+</article>
+
+<div *ngFor="let people of pessoas">
+  <p>{{ people.id }}</p>
+  <p> {{ people.name }}</p>
+  <p>{{ people.age }}</p>
+  <p>{{ people.email }}</p>
+  <p>{{ people.phone }}</p>
+
+  <article>
+    <button mat-raised-button color="warn" (click)="goDelete(people.id)">Delete</button>
+    <button mat-raised-button color="primary" (click)="goEdit(people.id)">Edit</button>
+  </article>
+
+</div>
+
+<article class="button">
+<button mat-fab color="warn" aria-label=" icon button with a home icon" (click)="goToHome()">Home</button>
+</article>

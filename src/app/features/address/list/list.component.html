@@ -1,0 +1,24 @@
+
+<article class="button">
+  <button mat-fab color="warn" aria-label=" icon button with a home icon" (click)="goToForm()">Formulario</button>
+  </article>
+
+<div *ngFor="let address of addresses">
+  <p>{{ address.id }}</p>
+  <p> {{ address.city }}</p>
+  <p>{{ address.county }}</p>
+  <p>{{ address.state }}</p>
+  <p>{{ address.zipCode }}</p>
+
+  <article>
+    <button mat-raised-button color="warn" (click)="goDelete(address.id)">Delete</button>
+    <button mat-raised-button color="primary" (click)="editAddress(address.id)">Edit</button>
+  </article>
+
+</div>
+
+<article class="button">
+  <button mat-fab color="warn" aria-label=" icon button with a home icon" (click)="goToHome()">Home</button>
+  </article>
+
+

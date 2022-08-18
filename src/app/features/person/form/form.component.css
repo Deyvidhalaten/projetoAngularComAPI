@@ -1,0 +1,40 @@
+.container{
+  height:100vh;
+  background-color: #e5e8e5;
+  color: #4e545c;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+section{
+  height: 50vh;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-style: solid;
+  border-color: green;
+  width: 600px;
+
+}
+
+
+button{
+  border-radius: 40px;
+  font-size:1.2rem;
+  height: 60px;
+  width: 100px;
+  border:none;
+  background-color: #4e545c;
+  color: #e5e8e8;
+  transition: açç 0.7s linear;
+  margin-top: 2rem;
+  outline-style:none;
+}
+
+button:hover{
+  background-color: #000401;
+}
+

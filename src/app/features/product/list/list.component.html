@@ -1,0 +1,25 @@
+
+
+<article class="button">
+  <button mat-fab color="warn" aria-label=" icon button with a home icon" (click)="goToForm()">Formulario</button>
+  </article>
+
+  <div *ngFor="let product of product">
+    <p>{{ product.id }}</p>
+    <p> {{ product.name }}</p>
+    <img src="{{product.imageUrl}}">
+    <p>{{ product.department }}</p>
+    <p>{{ product.price }}</p>
+    <p>{{ product.comment }}</p>
+
+  <article>
+    <button mat-raised-button color="warn" (click)="goDelete(product.id)">Delete</button>
+    <button mat-raised-button color="primary" (click)="editProduct(product.id)">Edit</button>
+  </article>
+
+</div>
+
+<article class="button">
+  <button mat-fab color="warn" aria-label=" icon button with a home icon" (click)="goToHome()">Home</button>
+  </article>
+
